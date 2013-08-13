@@ -9,9 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class MainServlet
- */
 @WebServlet(description = "Servlet which implements both doPost and do Get", urlPatterns = { "/MainServlet" })
 public class MainServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
