@@ -20,8 +20,18 @@
 <%
 String[] directions = {"North","East","West","South"};
 pageContext.setAttribute("directions", directions);
+int varContainigZero = 0;
 %>
 
 <c:out value="${directions['1']}"/>
+
+<hr>
+<c:out value="${1+'256'}"></c:out><br>
+<c:out value="${varDoesNotExist+1}"></c:out><br>
+<c:out value="${requestScope}"></c:out><br>
+<c:out value="${2/varDoesNotExist}"></c:out><br>
+<c:out value="${2/varContainigZero}"></c:out><br>
+<c:out value="${varDoesNotExist1 < varDoesNotExist2}"></c:out>
+
 </body>
 </html>
