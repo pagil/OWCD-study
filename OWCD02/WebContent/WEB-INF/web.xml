@@ -21,4 +21,23 @@
     <servlet-name>HelloByName</servlet-name>
     <url-pattern>/servlet/HelloByName</url-pattern>
   </servlet-mapping>
+
+<!--    -->
+  <servlet>
+    <servlet-name>ConvertServlet</servlet-name>
+    <servlet-class>owcd02.ConvertServlet</servlet-class>
+    <init-param>
+      <param-name>webmaster</param-name>
+      <param-value>servlets personal init param</param-value>
+    </init-param>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>ConvertServlet</servlet-name>
+    <url-pattern>/ConvertServlet</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+    <param-name>webmaster</param-name>
+    <param-value>address@tut.by</param-value>
+  </context-param>
 </web-app>
