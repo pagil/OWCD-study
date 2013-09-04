@@ -53,11 +53,6 @@ pageContext.setAttribute("s", s);
 <hr>
 <%! 
 String str;
-public void jspInit()
-{
-    str = (String)session.getAttribute("str");
-}
-
 %>
 The string is: <%=str %>
 
